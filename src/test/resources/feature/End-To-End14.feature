@@ -1,3 +1,4 @@
+@Regression
 Feature: End to end Test for account 
 
 Background: 
