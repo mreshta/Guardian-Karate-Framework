@@ -35,7 +35,7 @@
 						<!-- Parametrized Runner for sureFire plugin-->
 						<!-- In oder to run with maven command should-->
 						<!-- clean test -Drunner=<SmokeRunner / RegressionRunner> -->
-						<include>TestRunner.java</include>
+						<include>TestRunner2.java</include>
 					</includes>
 				</configuration>
 			</plugin>
