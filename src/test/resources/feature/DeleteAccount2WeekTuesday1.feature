@@ -1,3 +1,4 @@
+@Smoke
 Feature: Delete Account functionality
 
   #Scenario # 11: Manual & Automation

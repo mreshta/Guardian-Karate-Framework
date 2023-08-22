@@ -1,4 +1,4 @@
-@Random
+@Smoke
 Feature: Add Car to created account
 #step 5
 Background:
