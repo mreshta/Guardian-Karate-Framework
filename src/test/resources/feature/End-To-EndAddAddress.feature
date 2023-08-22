@@ -1,4 +1,4 @@
-@Random
+@Smoke
 Feature: Add address to the account
 #step 4
   Background: 

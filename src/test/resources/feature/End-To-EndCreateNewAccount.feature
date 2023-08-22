@@ -1,4 +1,4 @@
-@Random
+@Smoke
 Feature: Create new account
  #step 2
   Background: 

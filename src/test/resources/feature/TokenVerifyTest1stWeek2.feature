@@ -4,6 +4,10 @@ Feature: Token Verify Tests
   #have to work on it again
   Background: setup test
     Given url "https://tek-insurance-api.azurewebsites.net"
+    And path "/api/token"
+    And request {"username" : "supervisor", "password" : "tek_supervisor"}
+    When method post
+    Then status 200
 
   #4
   #Scenario # 4: Manual & Automation
@@ -16,10 +20,6 @@ Feature: Token Verify Tests
   #2) get token from response
   #3) send new request to /api/token/verify
   Scenario: Verify a valid token
-    And path "/api/token"
-    And request {"username" : "supervisor", "password" : "tek_supervisor"}
-    When method post
-    Then status 200
     And print response
     And path "/api/token/verify"
     And param username = "supervisor"
@@ -36,10 +36,6 @@ Feature: Token Verify Tests
   #Validate response should 400
   #Message == Wrong Username send along with Token
   Scenario: verify with valid token and invalid username
-    And path "/api/token"
-    And request {"username" : "supervisor", "password" : "tek_supervisor"}
-    And method post
-    Then status 200
     And print response
     And path "/api/token/verify"
     And param username = "wronguserName"
@@ -56,10 +52,6 @@ Feature: Token Verify Tests
   #Validate response status code 400
   #Message = Token Expired or Invalid Token
   Scenario: verify with invalid token and valid username
-    And path "/api/token"
-    And request {"username" : "supervisor", "password" : "tek_supervisor"}
-    And method post
-    Then status 200
     And print response
     And path "/api/token/verify"
     And param username = "supervisor"

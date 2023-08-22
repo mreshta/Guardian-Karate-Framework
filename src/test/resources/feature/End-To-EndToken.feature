@@ -1,3 +1,4 @@
+@Regression
 Feature: End to End test for account creation
 
   # step 1

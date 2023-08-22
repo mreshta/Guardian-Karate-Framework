@@ -1,4 +1,4 @@
-@Random
+@Smoke
 Feature: Delete the created account
 #final step
   Background: 

@@ -1,4 +1,4 @@
-@Random
+@Smoke
 Feature: Add phone Number
 #step 3
   Background: 
