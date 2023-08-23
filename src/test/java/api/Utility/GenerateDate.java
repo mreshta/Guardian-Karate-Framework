@@ -5,10 +5,7 @@ import java.util.Random;
 import java.util.Set;
 
 public class GenerateDate {
-	
 
-		        
-		
 	public static String getEmail() {
 		String prefix = "VenomEmail";
 		String provider = "@gmail.com";
@@ -45,25 +42,6 @@ public class GenerateDate {
 
 	}
 
-	
-	public static void main(String[] args) {
-//		for (int i = 0; i < 10; i++) {
-//			String email = getEmail();
-//			System.out.println(email);
-//		}
-		GenerateDate data = new GenerateDate();
-//		System.out.println(GenerateDate.getEmail());
-
-//		System.out.println(GenerateDate.getPhoneNumber());
-		System.out.println(GenerateDate.getAdressLine());
-	
-		
-		
-		
-	}
-
-	
-	
 	public static Set<String> gNum = new HashSet<>();
 
 	public static String getPhoneNumber() {
@@ -79,6 +57,7 @@ public class GenerateDate {
 		}
 		return phoneNumber;
 	}
+
 	public static Set<String> gAdd = new HashSet<>();
 
 	public static String getAdressLine() {
@@ -93,7 +72,29 @@ public class GenerateDate {
 			}
 		}
 		return phoneNumber;
-	
-}
-	
+
 	}
+
+	
+	public static String getUsername() {
+		
+		String prefix = "universe";
+		int random = (int) (Math.random() * 10000);
+		
+		return prefix.concat(String.valueOf(random))+"";
+	}
+	
+	public static void main(String[] args) {
+//		for (int i = 0; i < 10; i++) {
+//			String email = getEmail();
+//			System.out.println(email);
+//		}
+		GenerateDate data = new GenerateDate();
+//		System.out.println(GenerateDate.getEmail());
+
+//		System.out.println(GenerateDate.getPhoneNumber());
+		System.out.println(GenerateDate.getAdressLine());
+
+	}
+
+}
